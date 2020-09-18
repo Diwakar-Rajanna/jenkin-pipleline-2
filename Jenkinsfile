@@ -1,7 +1,7 @@
 pipeline {
 	agent none
-
 	stages {
+		parallel{
 		stage ('C Project') {
 			agent { label 'node2' }
 			steps {
