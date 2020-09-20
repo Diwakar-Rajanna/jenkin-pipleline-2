@@ -8,6 +8,7 @@ pipeline {
 				steps {
 				  	git 'https://github.com/Diwakar-Rajanna/c-project.git'
 						sh 'make'
+					sleep 10
 				}
 			}
 			stage ('Java Project') {
@@ -15,6 +16,7 @@ pipeline {
 				steps {
 					git 'https://github.com/Diwakar-Rajanna/java-project2.git'
 					sh 'mvn clean install'
+					sleep 10
 				}
 			}
 		}
